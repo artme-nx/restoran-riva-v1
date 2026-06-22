@@ -441,7 +441,7 @@
   // Lenis smooth scroll
   var lenis;
   if(!reduced && window.Lenis){
-    lenis = new Lenis({lerp:0.09, wheelMultiplier:1});
+    lenis = new Lenis({lerp:0.2, wheelMultiplier:1, smoothWheel:true, syncTouch:false});
     function raf(t){ lenis.raf(t); requestAnimationFrame(raf); }
     requestAnimationFrame(raf);
     if(window.gsap && window.ScrollTrigger){
